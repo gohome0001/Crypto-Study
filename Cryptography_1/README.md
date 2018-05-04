@@ -6,6 +6,6 @@
 
 ### note writings
 
-![notes](./img/note1.jpg)
+![notes](../img/note1.jpg)
 
-![notes](./img/note2.jpg)
+![notes](../img/note2.jpg)
