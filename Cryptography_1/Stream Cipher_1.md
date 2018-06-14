@@ -144,7 +144,7 @@ expand 128bit seed to 2048 bit keys, and generate 1 byte per round
 
 ### LFSR (Linear Feedback Shift Register)
 
-![lfsr](../img/LFSR.bmp)
+![lfsr](/img/LFSR.bmp)
 
 - seed = initial state
 - 실제로 저렇게 하나만 사용하진 않고, 여러개를 다른 size로 사용한다던가 함.
