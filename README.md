@@ -1,2 +1,3 @@
-# coursera_things
-what has been done with coursera courses
+# Crypto Study
+- what has been done with coursera courses
+- solving [crypto problems](http://cryptopals.com/)
