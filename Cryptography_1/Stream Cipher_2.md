@@ -76,7 +76,7 @@ G : k → {0,1}^n
 ```
 If ∀i ∈ {0,...,n-1}, PRG G is unpredictable at position i, then `G` is a secure PRG
 
-근데 심지어 나중의 output으로 이후의 output을 predict 할 수 있는 경우에도 안전하지 않다고 한다! ㅋㅋ
+근데 심지어 나중의 output으로 이의 output을 predict 할 수 있는 경우에도 안전하지 않다고 한다! ㅋㅋ
 
 아예 아무런 관계도 없어야 하는 것인가..
 
