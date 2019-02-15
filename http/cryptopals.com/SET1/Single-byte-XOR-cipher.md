@@ -10,7 +10,7 @@ We can do a frequency test, if a plain text is a english-readable-message
 
 the following list is top 4 of requently used alphabet
 
-- ['E','A','R','I']
+- ['E',' ','T','A','O','I','N']
 
 At the ciphertext, we should find the frequently used byte,
 
@@ -25,16 +25,16 @@ import collections
 ct = '1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736'.decode('hex')
 top = collections.Counter(ct).most_common(1)[0][0]
 
-for cand in [' ','E','A','O','I','U']:
+for cand in ['e',' ','t','a','o','i','n']:
     print "attempts for %c" % cand
     key = ord(top)^ord(cand)
     ts = ""
     for i in ct:
-        ts = chr(ord(i)^key)
+        ts += chr(ord(i)^key)
     print "key %d : %s" % (key, ts)
     ts = ""
 
-# It doesn't seems working..
+# key : 88
 ```
 exhaustive search
 ```python
@@ -43,7 +43,7 @@ ts = ""
 for i in range(255):
     for c in ct:
         ts += chr(ord(c)^i)
-    print "key %x : %s" % (i, ts)
+    print "key %d : %s" % (i, ts)
     ts = ""
-# find the most plain-text-like string and find the key! - key : 0x78
+# find the most plain-text-like string and find the key! - key : 88
 ```
